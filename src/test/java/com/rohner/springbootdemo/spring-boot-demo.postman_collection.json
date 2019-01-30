@@ -1,0 +1,261 @@
+{
+	"variables": [],
+	"info": {
+		"name": "spring-boot-demo",
+		"_postman_id": "5639068b-d5fc-273b-b7d4-98106b9e4929",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ALL PERSONS",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "2c31c39d-f4b3-4f29-98b2-262da05f1194",
+					"name": "GET ALL PERSONS",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/persons",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "GET A PERSON",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "7f968620-5e89-4e01-8bd6-76454765a2fc",
+					"name": "GET A PERSON",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/persons/2",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "POST NEW PERSON",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "818f7806-1e96-4add-8642-dea054b9ce3e",
+					"name": "POST NEW PERSON",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/person",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"Barney\",\n    \"name\":\"Geröllheimer\"\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "POST NEW PERSON WITH ADDRESS",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "979317c5-6749-419a-b5ca-6584553bbe3d",
+					"name": "POST NEW PERSON WITH ADDRESS",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/person",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Jim\",\n    \"name\": \"Lahey\",\n    \"birthDate\": null,\n    \"addresses\": [\n    \t{\n    \"street\": \"Mainstreet\",\n    \"houseNumber\": \"1\",\n    \"zipCode\": \"1000\",\n    \"city\": \"Sunnyvale Trailer Park\"\n}\n    \t]\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "UPDATE EXISTING PERSON",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "a41bc9f0-1616-4452-8d53-780c5b4747fa",
+					"name": "UPDATE EXISTING PERSON",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/persons/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Fred\",\n    \"name\": \"Feuerstein\",\n    \"birthDate\": null,\n    \"addresses\": null\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "UPDATE EXISTING PERSON WITH ADDRESS",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "50fe2ce5-d231-42dd-9f1d-a29fb817a3ef",
+					"name": "UPDATE EXISTING PERSON WITH ADDRESS",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/persons/2",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"Jim\",\n    \"name\": \"Lahey\",\n    \"birthDate\": null,\n    \"addresses\": [\n    \t{\n    \"street\": \"Sesamstrasse\",\n    \"houseNumber\": \"40\",\n    \"zipCode\": \"5000\",\n    \"city\": \"Musterstadt\"\n}\n    \t]\n}"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "DELETE A PERSON",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "ef32dee7-6b3e-47f6-b80f-8e63be276533",
+					"name": "DELETE A PERSON",
+					"originalRequest": {
+						"url": "http://localhost:8080/resources/persons/5",
+						"method": "DELETE",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"_postman_previewtype": "parsed",
+					"header": [],
+					"cookie": [],
+					"responseTime": 0,
+					"body": ""
+				}
+			]
+		}
+	]
+}
